@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta and page setup -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- User input and button to fetch weather -->
+    <input id="cityInput" placeholder="Enter city name" />
+    <button onclick="getWeather()">Get Weather</button>
+
+    <!-- Weather info card, hidden by default -->
+    <div id="weatherCard" class="hidden">
+
+      <!-- Header section with title and day -->
+      <div class="top-section">
+        <h3 class="small-title">Weather Forecast</h3>
+        <h1 id="day">SUNDAY</h1>
+      </div>
+
+      <!-- Middle section with weather icon and temperatures -->
+      <div class="middle-section">
+        <img id="weatherIcon" />
+        <div class="temps">
+          <span><strong>Max:</strong> <span id="tempMax">--°</span></span>
+          <span><strong>Min:</strong> <span id="tempMin">--°</span></span>
+        </div>
+      </div>
+
+      <!-- Weather description, humidity, and wind info -->
+      <div class="description-box">
+        <p id="description">--</p>
+        <p id="humidity">Humidity: --%</p>
+        <p id="wind">Wind: -- km/h</p>
+      </div>
+    </div>
+
+    <!-- Error message placeholder -->
+    <p id="error" class="error"></p>
+  </div>
+
+  <!-- Link to external JavaScript -->
+  <script src="scripts.js"></script>
+</body>
+</html>

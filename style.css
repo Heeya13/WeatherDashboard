@@ -1,0 +1,90 @@
+/* General page setup */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+/* Main app container */
+#app {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Input field and button styles */
+input,
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+/* Button-specific styles */
+button {
+  background-color: #0047AB;
+  color: white;
+  cursor: pointer;
+}
+
+/* Weather card container */
+#weatherCard {
+  background: rgba(0, 0, 50, 0.5);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+  width: 280px;
+}
+
+/* Title styles */
+.small-title {
+  font-size: 14px;
+  color: #add8e6;
+  margin-bottom: 0;
+}
+
+.top-section h1 {
+  margin-top: 0;
+  color: white;
+}
+
+/* Middle section with icon and temperature */
+.middle-section {
+  border: 2px solid #add8e6;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.middle-section img {
+  width: 60px;
+}
+
+.temps {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Weather description section */
+.description-box {
+  background-color: rgba(0, 71, 171, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Utility class to hide elements */
+.hidden {
+  display: none;
+}
